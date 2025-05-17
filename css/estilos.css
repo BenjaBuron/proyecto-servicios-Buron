@@ -1,0 +1,219 @@
+
+  body {
+
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #07090c;
+    color: white;
+  }
+
+
+  header {
+    background-color:  #07090c;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+
+  }
+  main{
+
+    background-color:#07090c;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 2px solid pink;
+    padding-bottom: 50px;
+  }
+
+  .logo {
+
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+  }
+
+  .logo img {
+    border-radius: 10px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    color: #FA8072;
+    text-decoration: underline;
+
+  }
+
+  .banner {
+    position: relative;
+    text-align: center;
+  }
+
+  .banner img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    animation: fadein 2s ease-in;
+  }
+
+  .texto-banner {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: white;
+    text-shadow: 1px 1px 5px #000;
+  }
+
+  .servicios-vista,
+  .servicios-detallados,
+  .contacto
+  .sobre-nosotros {
+    padding: 20px;
+  }
+  .contacto{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .cards {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px;
+  }
+
+  .card {
+    color: #000;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    min-width: 250px;
+    flex: 0 0 auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+
+  form {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    padding-bottom: 20px;
+  }
+
+  input, textarea {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+
+  }
+
+  button {
+    background: pink;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  button:hover {
+
+    background: #FA8072;
+  }
+  .header-contacto,
+  .header-servicios{
+    border-bottom: 2px solid pink;
+  }
+  footer {
+    background-color:#07090c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+
+  @keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 5; }
+  }
+
+  @media (max-width: 768px) {
+    .cards {
+      flex-direction: column;
+      overflow-x: unset;
+    }
+
+    nav {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .texto-banner {
+      position: static;
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+  }
+  .redes a{
+    display: flex;
+    color: pink;
+    text-decoration: none;
+    font-family: sans-serif;
+  }
+  .redes li{
+    display: inline;
+    text-decoration: none;
+  }
+  .redes ul {
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+
+}
+.redes li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.instagram:hover {
+   border-radius: 5px;
+  background: linear-gradient(to bottom, #4f5bd5,#962fbf,#d62976, #fa7e1e, #feda75 );
+}
+.facebook:hover {
+  background-color: #3b5998;
+  border-radius: 5px;
+}
+
